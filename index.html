@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A responsive Treact-style landing page built with HTML, CSS, and JavaScript." />
+  <title>Treact Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shape" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Treact home">
+        <img src="assets/logo.svg" alt="Treact logo" />
+        <span>Treact</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#login">Login</a>
+        <a class="btn btn-small" href="#signup">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <h1>Beautiful React Templates <span>for you.</span></h1>
+        <p class="hero-description">
+          Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
+        </p>
+
+        <form class="email-form" id="emailForm" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Your E-mail Address" autocomplete="email" />
+          <button type="submit">Get Started</button>
+        </form>
+        <p class="form-message" id="formMessage" role="status"></p>
+
+        <div class="customers">
+          <p>OUR TRUSTED CUSTOMERS</p>
+          <img src="assets/customers-logo-strip.png" alt="Fortune, The Weather Channel, Fast Company, and National Geographic logos" />
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/design-illustration.svg" alt="Person designing on a computer" />
+      </div>
+    </section>
+
+    <section class="features container" id="about" aria-labelledby="featuresTitle">
+      <p class="eyebrow">Features</p>
+      <h2 id="featuresTitle">Everything you need to launch faster.</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="assets/simple-icon.svg" alt="" aria-hidden="true" />
+          <h3>Simple</h3>
+          <p>Clean sections, reusable parts, and beginner-friendly code.</p>
+        </article>
+        <article class="feature-card">
+          <img src="assets/fast-icon.svg" alt="" aria-hidden="true" />
+          <h3>Fast</h3>
+          <p>Responsive layout, quick loading assets, and smooth interactions.</p>
+        </article>
+        <article class="feature-card">
+          <img src="assets/reliable-icon.svg" alt="" aria-hidden="true" />
+          <h3>Reliable</h3>
+          <p>Built with best practices so the page works across screen sizes.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Treact. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
